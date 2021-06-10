@@ -189,7 +189,7 @@ class GoogleDriveHelper:
         
 
         for content in self.telegraph_content :
-            self.path.append(telegra_ph.create_page(title = 'SearchX',
+            self.path.append(telegra_ph.create_page(title = '💡MAXX MIRROR BOT 💡',
                                                 html_content=content )['path'])
 
         self.num_of_path = len(self.path)      
@@ -198,7 +198,7 @@ class GoogleDriveHelper:
 
         msg = f"<b>Your Search Results:</b> ➼ {fileName} 👇 "
         
-        msg = f"<code>💐 Founded ( {content_count} ) Results For Your Search Query</code>"
+        msg = f"<b>Founded:</b> <code>( {content_count} )</code>\n\n<b>Results For</b>: <code>{fileName}</code>"
         
         buttons = button_builder.ButtonMaker()   
         buttons.buildbutton("📦 Click Here to Get", f"https://telegra.ph/{self.path[0]}")
