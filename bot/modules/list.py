@@ -13,7 +13,7 @@ def list_drive(update,context):
         sendMessage('<b>Opps 😐</b>\n\n💐 <b>Example</b>: <code>/Search Tron Legacy</code>', context.bot, update)
         return
         
-    reply = sendMessage('<code>Searching 🔍...</code>', context.bot, update)
+    reply = sendMessage('Searching..🔍', context.bot, update)
 
     LOGGER.info(f"Searching: {search}")
         
