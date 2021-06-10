@@ -10,10 +10,10 @@ def list_drive(update,context):
     try:
         search = update.message.text.split(' ',maxsplit=1)[1]
     except IndexError:
-        sendMessage('Send A Search Key Along With Command', context.bot, update)
+        sendMessage('<b>Opps 😐</b>\n\n💐 <b>Example</b>: <code>/Search Tron Legacy</code>', context.bot, update)
         return
         
-    reply = sendMessage('Searching...', context.bot, update)
+    reply = sendMessage('<code>Searching 🔍...</code>', context.bot, update)
 
     LOGGER.info(f"Searching: {search}")
         
