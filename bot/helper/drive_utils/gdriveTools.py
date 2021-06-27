@@ -17,7 +17,7 @@ LOGGER = logging.getLogger(__name__)
 logging.getLogger('googleapiclient.discovery').setLevel(logging.ERROR)
 
 SIZE_UNITS = ['B', 'KB', 'MB', 'GB', 'TB', 'PB']
-TELEGRAPHLIMIT = 95
+TELEGRAPHLIMIT = 50
 
 class GoogleDriveHelper:
     def __init__(self, name=None, listener=None):
@@ -201,6 +201,6 @@ class GoogleDriveHelper:
         msg = f"<b>Founded:</b> <code>( {content_count} )</code>\n\n<b>Results For</b>: <code>{fileName}</code>"
         
         buttons = button_builder.ButtonMaker()   
-        buttons.buildbutton("📦 Click Here to Get", f"https://telegra.ph/{self.path[0]}")
+        buttons.buildbutton("𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞 𝐭𝐨 𝐆𝐞𝐭 📩", f"https://telegra.ph/{self.path[0]}")
 
         return msg, InlineKeyboardMarkup(buttons.build_menu(1))
